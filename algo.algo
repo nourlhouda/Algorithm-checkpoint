@@ -1,0 +1,21 @@
+ALGORITHM algorithm_name
+VAR
+    sentence := STRING;
+    cc, cv, cw := INTEGER;
+BEGIN
+    write("Give a sentence ends with a point");
+    read(sentence);
+    while(sentence[cc]<>".")do
+    if(sentence[cc]="") then
+    cw++;
+    endif
+    if(sentence[cc]=["a","e","i","o","u"]) then
+    cv++;
+    endif
+    cc++;
+    end while
+    write(cc, cv, cw);
+END
+
+
+
